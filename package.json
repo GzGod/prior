@@ -1,0 +1,50 @@
+{
+  "name": "prior-testnet-auto-bot",
+  "version": "1.0.0",
+  "description": "一体化自动交互脚本，用于 Prior Protocol 测试网的自动 swap 与 mining 激活，适配 Base Sepolia 网络。",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "log": "tail -f mining_activations.log",
+    "clear": "rm -f mining_activations.log"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gzgod/prior.git"
+  },
+  "keywords": [
+    "prior",
+    "protocol",
+    "testnet",
+    "mining",
+    "swap",
+    "airdrop",
+    "automation",
+    "bot",
+    "ethers",
+    "crypto",
+    "base",
+    "sepolia",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "雪糕战神",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gzgod"
+  },
+  "homepage": "https://github.com/Gzgod",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.2",
+    "https-proxy-agent": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
